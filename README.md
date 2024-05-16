@@ -1,66 +1,24 @@
-## Foundry
+**Repository Name:** Solidity Encoding and Function Calls
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+**Description:**
+This repository contains Solidity smart contracts demonstrating encoding techniques and function calls in Ethereum smart contracts. It includes examples of using `abi.encode`, `abi.encodePacked`, `abi.decode`, and function signatures to encode and decode data for function calls. Additionally, it showcases how to call functions directly using their selectors or signatures.
 
-Foundry consists of:
+**Contents:**
+1. **Encoding.sol:** This contract provides examples of encoding data using `abi.encode`, `abi.encodePacked`, and `abi.decode`. It includes functions for combining strings, encoding numbers and strings, and decoding strings.
+   
+2. **CallAnything.sol:** This contract demonstrates various methods of calling functions directly using their selectors or signatures. It includes functions for transferring funds and obtaining function selectors, as well as examples of calling functions directly with different approaches.
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+**Usage:**
+- Deploy the contracts to an Ethereum development environment or testnet.
+- Interact with the contracts to observe the encoding and function calling techniques in action.
+- Use the provided functions to encode data for function calls and call functions directly.
 
-## Documentation
+**Notes:**
+- Refer to the comments within the contracts for detailed explanations of each function and technique.
+- Ensure that the contracts are deployed and interacted with in a suitable development or testing environment to avoid unintended consequences on the Ethereum mainnet.
 
-https://book.getfoundry.sh/
+**License:** MIT
 
-## Usage
+**Author:** [Emmanuel Acho]
 
-### Build
-
-```shell
-$ forge build
-```
-
-### Test
-
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+**Contact:** [emmanuel@earesearch.net]
